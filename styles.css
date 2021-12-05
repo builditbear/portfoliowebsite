@@ -1,7 +1,90 @@
+* {
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: seashell;
+}
+
 a {
     text-decoration: none;
 }
 
-body{
-    background-color: seashell;
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#svg_defs {
+    display: none;
+}
+
+
+div.nav_column {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Mobile Layout */
+@media screen and (min-width: 300px) {
+
+    .nav_icon {
+        width: 10vw;
+        height: 10vh;
+    }
+
+    #mail_column {
+        flex: 3;
+        justify-content: start;
+    }
+
+    #logo_desktop {
+        display: none;
+    }
+
+    #logo_mobile {
+        width: 15vw;
+        height: 15vh;
+    }
+
+}
+
+/* Tablet Layout */
+@media screen and (min-width: 600px) {
+    .nav_icon {
+        width: 6vw;
+        height: auto;
+    };
+
+    #mail_column {
+        flex: 4;
+    }
+
+    #logo_mobile {
+        display: none;
+    }
+
+    #logo_desktop {
+        display: flex;
+        flex: 8;
+    }
+}
+
+/* Desktop Layout */
+
+@media screen and (min-width: 900px) {
+    #mail_column {
+        flex: 8;
+        justify-content: start;
+    }
+
+    #logo_desktop {
+        display: flex;
+        flex: 4;
+        justify-content: start;
+    }
 }
