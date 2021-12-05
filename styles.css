@@ -3,38 +3,45 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: seashell;
+    /* background-color: seashell; */
+}
+
+body{
+    background: seashell;
 }
 
 a {
     text-decoration: none;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 #svg_defs {
     display: none;
 }
 
+/* Base navbar behavior. */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #758ECD;
+    height: auto;
+}
 
 div.nav_column {
     display: flex;
     flex: 1;
     padding: 10px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
+/* ------------------------- */
 
 /* Mobile Layout */
 @media screen and (min-width: 300px) {
 
     .nav_icon {
         width: 10vw;
-        height: 10vh;
+        height: auto;
     }
 
     #mail_column {
@@ -42,49 +49,63 @@ div.nav_column {
         justify-content: start;
     }
 
-    #logo_desktop {
+    #logo_container_desktop {
         display: none;
     }
 
     #logo_mobile {
         width: 15vw;
-        height: 15vh;
     }
-
 }
+/* ------------------------- */
 
 /* Tablet Layout */
 @media screen and (min-width: 600px) {
     .nav_icon {
         width: 6vw;
         height: auto;
-    };
+    }
 
     #mail_column {
         flex: 4;
     }
 
-    #logo_mobile {
+    #logo_container_mobile {
         display: none;
     }
 
-    #logo_desktop {
+    #logo_container_desktop {
         display: flex;
-        flex: 8;
+        flex: 4;
+    }
+
+    #logo_desktop {
+        width: 33vw;
     }
 }
+/* ------------------------- */
 
 /* Desktop Layout */
 
 @media screen and (min-width: 900px) {
     #mail_column {
-        flex: 8;
+        flex: 6;
+    }
+
+    .nav_icon {
+        width: 3.5vw;
+        min-width: 10rem;
+        height: auto;
+    }
+
+    #logo_container_desktop {
         justify-content: start;
+        align-items: center;
+        flex: 2.5;
     }
 
     #logo_desktop {
-        display: flex;
-        flex: 4;
-        justify-content: start;
+        width: 18vw;
+        min-width: 50rem;
     }
 }
