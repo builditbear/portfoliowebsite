@@ -1,3 +1,4 @@
+/* Clearing default styling and setting some general page styles. */
 * {
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
@@ -17,6 +18,8 @@ a {
 #svg_defs {
     display: none;
 }
+/* =========================================== */
+/* NAVBAR */
 
 /* Base navbar behavior. */
 .navbar {
@@ -94,7 +97,7 @@ div.nav_column {
 
     .nav_icon {
         width: 3.5vw;
-        min-width: 10rem;
+        /* min-width: 10rem; */
         height: auto;
     }
 
@@ -106,6 +109,123 @@ div.nav_column {
 
     #logo_desktop {
         width: 18vw;
-        min-width: 50rem;
+        /* min-width: 50rem; */
     }
 }
+
+/* =========================================== */
+/* HEADER */
+
+@media screen and (min-width: 300px){
+
+    header > .img_container {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_wrapper {
+        width: 40vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    #profile_pic {
+        max-width:100%;
+        max-height:100%;
+        height: auto;
+        width: auto;
+        border: solid #0B132B;
+        border-radius: 4vw;
+    }
+
+    .terminal_frame {
+        display: flex;
+        margin: 20px;
+        padding: 3vw;
+        justify-content: center;
+    }
+    
+    .terminal_text_box {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: auto;
+        border: medium solid #0B132B;
+        border-radius:3vw 7vw;
+        padding: 3vw;
+        background: #1C2541;
+        color: seashell;
+    }
+
+    header p {
+        font-size: 3.5vw;
+    }
+}
+/* =========================================== */
+/* ABOUT ME */
+
+@media screen and (min-width: 300px){
+    /* ABOUT ME */
+    .about_me_section {
+        display: flex;
+        padding: 10px;
+        margin: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bio_container{
+        display: flex;
+        width: 70vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_me_section > h2 {
+        padding: 4vw;
+    }
+
+    #cartoon_portrait {
+        width: 50vw; 
+    }   
+}
+
+/* =========================================== */
+/* EDUCATION */
+
+@media screen and (min-width: 300px) {
+    .education {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .education > .text_container {
+        display: flex;
+        width: 70vw;
+        flex-direction: column;
+        align-items: center;
+        padding: 3vw;
+    }
+
+    .education > .text_container > p{
+        font-size: 3vw;
+    }
+
+    .education > .text_container > h2{
+        padding: 1.5vw;
+
+    }
+
+    .education > #wgu_svg {
+        width: 60vw;
+    }
+}
+
+/* =========================================== */
+/* Layout Classes */
