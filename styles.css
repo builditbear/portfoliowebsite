@@ -1,4 +1,4 @@
-/* Clearing default styling and setting some general page styles. */
+/* Clearing default styling and setting globals styles. */
 * {
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
     /* background-color: seashell; */
 }
 
-body{
+body {
     background: seashell;
 }
 
@@ -18,59 +18,72 @@ a {
 #svg_defs {
     display: none;
 }
+
 /* =========================================== */
-/* NAVBAR */
+/* Structure Classes */
 
-/* Base navbar behavior. */
-.navbar {
+.centered_flex_container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #758ECD;
-    height: auto;
-}
-
-div.nav_column {
-    display: flex;
-    flex: 1;
-    padding: 10px;
     justify-content: center;
     align-items: center;
 }
+
+.left_aligned_flex_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.medium_padding {
+    padding: 3vw;
+}
+
+.small_padding {
+    padding: 1vw;
+}
+
+.navbar {
+    justify-content: space-around;
+    height: auto;
+}
+
+.nav_icon {
+    width: 10vw;
+    height: auto;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex4 {
+    flex: 4;
+}
+
+/* =========================================== */
+/* Decoration Classes */
+.periwinkle_background {
+    background: #758ECD;
+}
+
+.hidden {
+    display: none;
+}
+
 /* ------------------------- */
 
-/* Mobile Layout */
-@media screen and (min-width: 300px) {
+/* Mobile Scaling */
 
-    .nav_icon {
-        width: 10vw;
-        height: auto;
-    }
-
-    #mail_column {
-        flex: 3;
-        justify-content: start;
-    }
-
-    #logo_container_desktop {
-        display: none;
-    }
-
-    #logo_mobile {
-        width: 15vw;
-    }
+#logo_mobile {
+    width: 15vw;
 }
+
 /* ------------------------- */
 
 /* Tablet Layout */
 @media screen and (min-width: 600px) {
     .nav_icon {
         width: 6vw;
-        height: auto;
-    }
-
-    #mail_column {
-        flex: 4;
     }
 
     #logo_container_mobile {
@@ -86,19 +99,20 @@ div.nav_column {
         width: 33vw;
     }
 }
+
 /* ------------------------- */
 
 /* Desktop Layout */
 
 @media screen and (min-width: 900px) {
-    #mail_column {
-        flex: 6;
-    }
-
     .nav_icon {
         width: 3.5vw;
         /* min-width: 10rem; */
         height: auto;
+    }
+
+    #mail_column {
+        flex: 6;
     }
 
     #logo_container_desktop {
@@ -109,16 +123,15 @@ div.nav_column {
 
     #logo_desktop {
         width: 18vw;
-        /* min-width: 50rem; */
     }
 }
 
 /* =========================================== */
 /* HEADER */
 
-@media screen and (min-width: 300px){
+@media screen and (min-width: 300px) {
 
-    header > .img_container {
+    header>.img_container {
         display: none;
         flex-direction: column;
         align-items: center;
@@ -132,8 +145,8 @@ div.nav_column {
     }
 
     #profile_pic {
-        max-width:100%;
-        max-height:100%;
+        max-width: 100%;
+        max-height: 100%;
         height: auto;
         width: auto;
         border: solid #0B132B;
@@ -146,14 +159,14 @@ div.nav_column {
         padding: 3vw;
         justify-content: center;
     }
-    
+
     .terminal_text_box {
         display: flex;
         flex-direction: column;
         width: 80vw;
         height: auto;
         border: medium solid #0B132B;
-        border-radius:3vw 7vw;
+        border-radius: 3vw 7vw;
         padding: 3vw;
         background: #1C2541;
         color: seashell;
@@ -163,10 +176,12 @@ div.nav_column {
         font-size: 3.5vw;
     }
 }
+
 /* =========================================== */
 /* ABOUT ME */
 
-@media screen and (min-width: 300px){
+@media screen and (min-width: 300px) {
+
     /* ABOUT ME */
     .about_me_section {
         display: flex;
@@ -177,7 +192,7 @@ div.nav_column {
         justify-content: center;
     }
 
-    .bio_container{
+    .bio_container {
         display: flex;
         width: 70vw;
         flex-direction: column;
@@ -185,13 +200,13 @@ div.nav_column {
         justify-content: center;
     }
 
-    .about_me_section > h2 {
+    .about_me_section>h2 {
         padding: 4vw;
     }
 
     #cartoon_portrait {
-        width: 50vw; 
-    }   
+        width: 50vw;
+    }
 }
 
 /* =========================================== */
@@ -205,7 +220,7 @@ div.nav_column {
         flex-direction: column;
     }
 
-    .education > .text_container {
+    .education>.text_container {
         display: flex;
         width: 70vw;
         flex-direction: column;
@@ -213,19 +228,16 @@ div.nav_column {
         padding: 3vw;
     }
 
-    .education > .text_container > p{
+    .education>.text_container>p {
         font-size: 3vw;
     }
 
-    .education > .text_container > h2{
+    .education>.text_container>h2 {
         padding: 1.5vw;
 
     }
 
-    .education > #wgu_svg {
+    .education>#wgu_svg {
         width: 60vw;
     }
 }
-
-/* =========================================== */
-/* Layout Classes */
