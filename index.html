@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="centered_flex_container navbar periwinkle_background">
+    <nav class="centered_flex_container navbar glaucous_background">
         <div class="centered_flex_container small_padding flex1" id="logo_container_mobile">
             <svg viewBox="0 0 200 200" class="nav_icon" id="logo_mobile">
                 <use xlink:href="#builditbear_logo_mobile" />
@@ -73,14 +73,14 @@
         </div>
     </header>
 
-    <section class="about_me_section">
+    <section class="centered_flex_container flex_dir_column small_padding small_margin about_me_section">
         <div id="svg_container">
             <svg viewBox="0 0 397 434" class="nav_icon" id="cartoon_portrait">
                 <use xlink:href="#framed_cartoon_portrait" />
             </svg>
         </div>
-        <h2>About Me</h2>
-        <div class="bio_container">
+        <h2 class="medium_margin">About Me</h2>
+        <div class="centered_flex_container bio_container">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed in, tempora tenetur corporis maxime saepe! Cum tempora, excepturi accusantium aliquam labore dolore assumenda sit delectus at amet dolorum corrupti libero.
             </p>
@@ -107,47 +107,56 @@
                 ecstatic to help you to make a similar difference in the lives of your users! -->
         </div>
     </section>
-    <section class="education">
-        <div class="text_container">
-            <h2>Education</h2>
+    <section class="centered_flex_container flex_dir_column education">
+        <div class="centered_flex_container flex_dir_column medium_padding text_container">
+            <h2 class="medium_margin">Education</h2>
             <p>Bachelor of Science, Computer Science</p>
             <p>Expected Graduation Date: February, 2022</p>
         </div>
-        <svg viewBox="0 0 600 132.76" id="wgu_svg">
+        <svg class="medium_margin" viewBox="0 0 600 132.76" id="wgu_svg">
             <use xlink:href="#wgu_logo" />
         </svg>
     </section>
     <section>
-        <h2>Skills</h2>
+        <h2 class="centered_flex_container medium_margin">Skills</h2>
         <ul>
-            <li>
+            <li class="centered_flex_container small_margin">
                 <img src=" images/js_icon.svg" alt="JavaScript Icon.">
+                <div class="progressbar">
+                    <span style="width: 40%"></span>
+                </div>
             </li>
-            <li>
+            <li class="centered_flex_container small_margin">
                 <img src="images/css_icon.svg" alt="CSS Icon.">
+                <div class="progressbar">
+                    <span style="width: 40%"></span>
+                </div>
             </li>
-            <li>
+            <li class="centered_flex_container small_margin">
                 <img src="images/html5_icon.svg" alt="HTML 5 Icon.">
+                <div class="progressbar">
+                    <span style="width: 80%"></span>
+                </div>
             </li>
-            <li>
+            <li class="centered_flex_container small_margin">
                 <img src="images/python_icon.svg" alt="Python Programming Language Icon.">
+                <div class="progressbar">
+                    <span style="width: 60%"></span>
+                </div>
             </li>
-            <li>
+            <li class="centered_flex_container small_margin">
                 <img src="images/java_icon.svg" alt="Java Programming Language Icon.">
-            </li>
-            <li>
-                <p>Web Design</p>
-            </li>
-            <li>
-                <p>Shell Command Language</p>
+                <div class="progressbar">
+                    <span style="width: 70%"></span>
+                </div>
             </li>
         </ul>
     </section>
     <section>
-        <h2>Toolkit</h2>
+        <h2 class="medium_margin">Toolkit</h2>
         <div>
             <img src="images/dino_blueprint.svg" alt="">
-            <h2>Design and Planning</h2>
+            <h3>Design and Planning</h3>
             <ul>
                 <li>Figma</li>
                 <li>Adobe Illustrator</li>
@@ -155,7 +164,7 @@
         </div>
         <div>
             <img src="images/dino_construction.svg" alt="">
-            <h2>Front-End</h2>
+            <h3>Front-End</h3>
             <ul>
                 <li>VS Code</li>
                 <li>Chrome Developer Tools</li>
@@ -164,7 +173,7 @@
         </div>
         <div>
             <img src="images/dino_internal_workings.svg" alt="">
-            <h2>Back-End</h2>
+            <h3>Back-End</h3>
             <ul>
                 <li>IntelliJ Idea</li>
                 <li>Node.js</li>
@@ -175,7 +184,7 @@
         </div>
     </section>
     <section>
-        <h2>Project Portfolio</h2>
+        <h2 class="medium_margin">Project Portfolio</h2>
         <img src="images/projectplaceholder.svg" alt="Project placeholder card.">
         <img src="images/projectplaceholder.svg" alt="Project placeholder card.">
         <img src="images/projectplaceholder.svg" alt="Project placeholder card.">

@@ -4,11 +4,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* background-color: seashell; */
 }
 
 body {
     background: seashell;
+}
+
+h2.medium_margin {
+    font-size: 4vw;
+}
+
+p {
+    font-size: 3vw;
 }
 
 a {
@@ -45,6 +52,14 @@ a {
     padding: 1vw;
 }
 
+.medium_margin {
+    margin: 3vw;
+}
+
+.small_margin {
+    margin: 1vw;
+}
+
 .navbar {
     justify-content: space-around;
     height: auto;
@@ -64,7 +79,7 @@ a {
 }
 /* =========================================== */
 /* Decoration Classes: Common styles affecting appearance of content. */
-.periwinkle_background {
+.glaucous_background {
     background: #758ECD;
 }
 
@@ -78,6 +93,28 @@ a {
 
 .hidden {
     display: none;
+}
+
+.progressbar {
+    height: 5vw;
+    width: 50vw;
+    background: #1C2541;
+    border-radius: 2vw;
+    padding: .8vw;
+    box-shadow: inset -.2vw .2vw #0B132B;
+}
+
+.progressbar > span {
+    display: block;
+    height: 100%;
+    border-radius: 3vw 1vw 1vw 3vw;
+    background-color: #1C2541;
+    background-image: linear-gradient(20deg,#7FD7DA 37%, #3D5A80 69%);
+    box-shadow: 
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
 }
 /* =========================================== */
 /* Responsive Layout Rules */
@@ -109,59 +146,26 @@ a {
     }
 
     /* ABOUT ME */
-    .about_me_section {
-        display: flex;
-        padding: 10px;
-        margin: 10px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
 
     .bio_container {
-        display: flex;
-        width: 70vw;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 65vw;
     }
 
-    .about_me_section>h2 {
-        padding: 4vw;
-    }
-
-    #cartoon_portrait {
+    #cartoon_portrait{
         width: 50vw;
     }
-    
-    .education {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+
+    /* EDUCATION */
+
+    .education > #wgu_svg {
+        width: 50vw;
     }
 
     .education>.text_container {
-        display: flex;
         width: 70vw;
-        flex-direction: column;
-        align-items: center;
-        padding: 3vw;
-    }
-
-    .education>.text_container>p {
-        font-size: 3vw;
-    }
-
-    .education>.text_container>h2 {
-        padding: 1.5vw;
-
-    }
-
-    .education > #wgu_svg {
-        width: 60vw;
     }
     
+    /*  */
 }
 
 /* ------------------------- */
