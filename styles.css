@@ -20,8 +20,7 @@ a {
 }
 
 /* =========================================== */
-/* Structure Classes */
-
+/* Structure Classes: Commonly used styles for content placement and size scaling. */
 .centered_flex_container {
     display: flex;
     justify-content: center;
@@ -32,6 +31,10 @@ a {
     display: flex;
     justify-content: start;
     align-items: center;
+}
+
+.flex_dir_column {
+    flex-direction: column;
 }
 
 .medium_padding {
@@ -59,28 +62,110 @@ a {
 .flex4 {
     flex: 4;
 }
-
 /* =========================================== */
-/* Decoration Classes */
+/* Decoration Classes: Common styles affecting appearance of content. */
 .periwinkle_background {
     background: #758ECD;
+}
+
+.space_cadet_background {
+    background: #1C2541;
+}
+
+.oxford_blue_border {
+    border: medium solid #0B132B;
 }
 
 .hidden {
     display: none;
 }
-
+/* =========================================== */
+/* Responsive Layout Rules */
 /* ------------------------- */
+/* Mobile */
+@media screen and (min-width: 300px) {
 
-/* Mobile Scaling */
+    /* NAVBAR */
+    #logo_mobile {
+        width: 15vw;
+    }
 
-#logo_mobile {
-    width: 15vw;
+    /* HEADER */
+
+    .terminal_frame {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    .terminal_text_box {
+        align-items: start;
+        width: 80vw;
+        border-radius: 3vw 7vw;
+        color: seashell;
+    }
+
+    header p {
+        font-size: 3.5vw;
+    }
+
+    /* ABOUT ME */
+    .about_me_section {
+        display: flex;
+        padding: 10px;
+        margin: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bio_container {
+        display: flex;
+        width: 70vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_me_section>h2 {
+        padding: 4vw;
+    }
+
+    #cartoon_portrait {
+        width: 50vw;
+    }
+    
+    .education {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .education>.text_container {
+        display: flex;
+        width: 70vw;
+        flex-direction: column;
+        align-items: center;
+        padding: 3vw;
+    }
+
+    .education>.text_container>p {
+        font-size: 3vw;
+    }
+
+    .education>.text_container>h2 {
+        padding: 1.5vw;
+
+    }
+
+    .education > #wgu_svg {
+        width: 60vw;
+    }
+    
 }
 
 /* ------------------------- */
-
-/* Tablet Layout */
+/* Tablet */
 @media screen and (min-width: 600px) {
     .nav_icon {
         width: 6vw;
@@ -92,14 +177,12 @@ a {
 
     #logo_container_desktop {
         display: flex;
-        flex: 4;
     }
 
     #logo_desktop {
         width: 33vw;
     }
 }
-
 /* ------------------------- */
 
 /* Desktop Layout */
@@ -127,117 +210,3 @@ a {
 }
 
 /* =========================================== */
-/* HEADER */
-
-@media screen and (min-width: 300px) {
-
-    header>.img_container {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img_wrapper {
-        width: 40vw;
-        height: auto;
-        display: flex;
-        align-items: center;
-    }
-
-    #profile_pic {
-        max-width: 100%;
-        max-height: 100%;
-        height: auto;
-        width: auto;
-        border: solid #0B132B;
-        border-radius: 4vw;
-    }
-
-    .terminal_frame {
-        display: flex;
-        margin: 20px;
-        padding: 3vw;
-        justify-content: center;
-    }
-
-    .terminal_text_box {
-        display: flex;
-        flex-direction: column;
-        width: 80vw;
-        height: auto;
-        border: medium solid #0B132B;
-        border-radius: 3vw 7vw;
-        padding: 3vw;
-        background: #1C2541;
-        color: seashell;
-    }
-
-    header p {
-        font-size: 3.5vw;
-    }
-}
-
-/* =========================================== */
-/* ABOUT ME */
-
-@media screen and (min-width: 300px) {
-
-    /* ABOUT ME */
-    .about_me_section {
-        display: flex;
-        padding: 10px;
-        margin: 10px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .bio_container {
-        display: flex;
-        width: 70vw;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .about_me_section>h2 {
-        padding: 4vw;
-    }
-
-    #cartoon_portrait {
-        width: 50vw;
-    }
-}
-
-/* =========================================== */
-/* EDUCATION */
-
-@media screen and (min-width: 300px) {
-    .education {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .education>.text_container {
-        display: flex;
-        width: 70vw;
-        flex-direction: column;
-        align-items: center;
-        padding: 3vw;
-    }
-
-    .education>.text_container>p {
-        font-size: 3vw;
-    }
-
-    .education>.text_container>h2 {
-        padding: 1.5vw;
-
-    }
-
-    .education>#wgu_svg {
-        width: 60vw;
-    }
-}
