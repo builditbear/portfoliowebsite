@@ -11,7 +11,11 @@ body {
 }
 
 h2.medium_margin {
-    font-size: 4vw;
+    font-size: 5vw;
+}
+
+h3.medium_margin {
+    font-size: 3vw;
 }
 
 p {
@@ -40,6 +44,10 @@ a {
     align-items: center;
 }
 
+.small_rounded_edges {
+    border-radius: 3vw;
+}
+
 .flex_dir_column {
     flex-direction: column;
 }
@@ -56,6 +64,13 @@ a {
     margin: 3vw;
 }
 
+.no_top_padding {
+    margin-top: 0vw;
+}
+
+.no_bottom_padding {
+    margin-bottom: 0vw;
+}
 .small_margin {
     margin: 1vw;
 }
@@ -117,6 +132,16 @@ a {
     overflow: hidden;
 }
 /* =========================================== */
+/* Scaling Classes*/
+/* =========================================== */
+.width_50 {
+    width: 50vw;
+}
+
+.width_75 {
+    width: 75vw;
+}
+
 /* Responsive Layout Rules */
 /* ------------------------- */
 /* Mobile */
@@ -129,10 +154,10 @@ a {
 
     /* HEADER */
 
-    .terminal_frame {
+    /* .terminal_frame {
         margin-top: 5vw;
         margin-bottom: 5vw;
-    }
+    } */
 
     .terminal_text_box {
         align-items: start;
@@ -164,8 +189,19 @@ a {
     .education>.text_container {
         width: 70vw;
     }
-    
-    /*  */
+
+    /* SKILLS */
+
+    .skill_icon {
+        width: 22vw;
+        height: auto;
+    }
+
+    /* TOOLKIT */
+
+    .dino_diagram {
+        width: 75vw;
+    }
 }
 
 /* ------------------------- */
