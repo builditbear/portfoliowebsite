@@ -1,0 +1,6 @@
+1. Write an actual about me section.
+2. Replace list of technologies with their svg logos instead.
+3. Get rid of black outline in dino portraits 2 and 3.
+4. Fix Build-It Bear logo's weird fill in with the tags.
+5. Tweak background color of dino logos.
+6. Tweak header style.
