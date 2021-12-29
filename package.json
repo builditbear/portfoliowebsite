@@ -1,0 +1,22 @@
+{
+  "name": "portfoliowebsite",
+  "version": "1.0.0",
+  "description": "My job portfolio site.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/builditbear/portfoliowebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/builditbear/portfoliowebsite/issues"
+  },
+  "homepage": "https://github.com/builditbear/portfoliowebsite#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
