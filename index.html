@@ -70,32 +70,14 @@
         <div class="centered_flex_container medium_margin">
             <img class="width_50" src="images/framed_cartoon_portrait_figma.svg" alt="Background picture of me." id="profile_pic">
         </div>
-        <h2 class="medium_padding">About Me</h2>
-        <div class="centered_flex_container bio_container">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed in, tempora tenetur corporis maxime saepe! Cum tempora, excepturi accusantium aliquam labore dolore assumenda sit delectus at amet dolorum corrupti libero.
+        <h2 class="centered_flex_container medium_margin">About Me</h2>
+        <div class="centered_flex_container flex_dir_column width_50">
+            <p class="padding_medium">
+                Relentlessly upbeat, Brandon is a diligent learner and worker who's eager to help you bring powerful ideas to life in the form of elegant app experiences that users and developers alike can enjoy. 
             </p>
-            <!-- Too long, but could be great material with some trimming. -->
-            <!-- <p>Although my formal education has granted me a firm understanding of computer systems, programming
-                paradigms,
-                and software engineering principles, my curious and investigative nature is what led me to self-educate
-                on
-                key technologies and software commonly employed in web development.</p>
-            <p>As a nascent webe devloper, it is my goal to aid you in building powerful yet aesthetically breathtaking
-                websites and apps with a responsive user experience. I’ve witnessed first-hand how an unintuitive and
-                bloated system can evoke frustration and hamper team efforts, whereas a more thoughtful, streamlined
-                product
-                instead promotes everyone’s success (and mental wellbeing). In short: both the Front and Back Ends
-                deserve
-                to be silky smooth!</p>
-            <p>That said, for all my appreciation of elegant interfaces, much of my skill and interest lies in the realm
-                of
-                programming: I absolutely adore solving problems and discovering ways to simplify
-                existing tasks, large and small, with the power of algorithms, logic, and a healthy smattering of
-                imagination. Inspired by the impact that fluid web apps have had on my life and those around me, I'm
-                honored
-                and
-                ecstatic to help you to make a similar difference in the lives of your users! -->
+            <p class="padding_medium">
+                Amicable to a fault, he is an open-minded and humble guy with years of teamwork experience and a childlike propensity for learning. If Brandon's the droid you're looking for, feel free to reach out to him - he's raring to make some tech-savvy friends (job offers are nice too)!
+            </p>
         </div>
     </section>
     <section class="centered_flex_container flex_dir_column education">
@@ -146,39 +128,72 @@
         </ul>
     </section>
     <section>
-        <h2 class="centered_flex_container medium_padding">Toolkit</h2>
-        <div class="centered_flex_container flex_dir_column medium_padding">
+        <h2 class="centered_flex_container">Toolkit</h2>
+        <div class="centered_flex_container flex_dir_column">
             <div class="centered_flex_container">
                 <img class="width_75 small_rounded_edges" src="images/dino_blueprint.svg" alt="">
             </div>
-            <h3 class="medium_padding">Design and Planning</h3>
-            <ul>
-                <li>Figma</li>
-                <li>Adobe Illustrator</li>
+            <h3>Design and Planning</h3>
+            <ul class="viewport_wide_centered_flex_container">
+                <div class="centered_flex_container">
+                    <img class="width_30" src="images/figma_logo.svg" alt="Figma Logo">
+                </div>
+                <div class="centered_flex_container">
+                    <!-- For some reason, this svg scales much quicker than the others when the same class is used? -->
+                    <!-- (it get much larger than the other icons). Quickly fixed with manual styling.
+                    <!-- Will investigate this later. -->
+                    <img style="width: 13vw" src="images/ai_illustrator_logo.svg" alt="Adobe Illustrator Logo">
+                </div>
             </ul>
         </div>
         <div class="centered_flex_container flex_dir_column medium_padding">
             <div class="centered_flex_container">
-                <img class="width_75 small_rounded_edges" src="images/dino_construction.svg" alt="">
+                <img class="width_75 small_rounded_edges" src="images/dino_construction_new.svg" alt="">
             </div>
-            <h3 class="medium_padding">Front-End</h3>
-            <ul>
-                <li>VS Code</li>
-                <li>Chrome Developer Tools</li>
-                <li>Bootstrap CSS</li>
+            <h3>Front-End</h3>
+            <!-- When rows of svg icons span multiple rows, it's impossible to line them up nicely -->
+            <!-- because they're all different sizes! Manually scaled and added margins where necessary for now... -->
+            <ul class="viewport_wide_centered_flex_container"">
+                <div class="centered_flex_container">
+                    <img class="width_30" src="images/vscode_logo.svg" alt="">
+                </div>
+                <div class="centered_flex_container">
+                    <img class="width_30" src="images/google_chrome_logo.svg" alt="">
+                </div>
+            </ul>
+            <ul class="viewport_wide_centered_flex_container">
+                <div class="centered_flex_container">
+                    <img class="width_30" src="images/bootstrap_css_logo.svg" alt="">
+                </div>
+                <div class="centered_flex_container medium_margin">
+                    <img class="width_15" src="images/IntelliJ_IDEA_Icon.svg" alt="">
+                </div>
             </ul>
         </div>
         <div class="centered_flex_container flex_dir_column medium_padding">
             <div class="centered_flex_container">
-                <img class="width_75 small_rounded_edges" src="images/dino_internal_workings.svg" alt="">
+                <img class="width_75 small_rounded_edges" src="images/dino_internal_workings_new.svg" alt="">
             </div>
-            <h3 class="medium_padding">Back-End</h3>
-            <ul>
-                <li>IntelliJ Idea</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>Bash/Zsh</li>
-                <li>Postman</li>
+            <h3>Back-End</h3>
+            <ul class="viewport_wide_centered_flex_container">
+                <div class="centered_flex_container">
+                    <img class="width_30" src="images/nodejs_logo.svg" alt="NodeJS Logo">
+                </div>
+                <div class="centered_flex_container">
+                    <img class="width_30" src="images/nodemon_logo.svg" alt="Nodemon Logo">
+                </div>
+                <div class="centered_flex_container">
+                    <img class="width_30" src="images/express_js_logo.svg" alt="ExpressJS Logo">
+                </div>
+
+            </ul>
+            <ul class="viewport_wide_centered_flex_container">
+                <div class="centered_flex_container">
+                    <img class="width_30" src="images/gnu_bash_logo.svg" alt="GNU Bash Logo">
+                </div>
+                <div class="centered_flex_container">
+                    <img class="width_30" src="images/postman_logo.svg" alt="Postman Logo">
+                </div>              
             </ul>
         </div>
     </section>

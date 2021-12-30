@@ -10,12 +10,14 @@ body {
     background: seashell;
 }
 
-h2.medium_margin {
+h2 {
     font-size: 5vw;
+    margin: 3vw;
 }
 
-h3.medium_margin {
-    font-size: 3vw;
+h3 {
+    font-size: 3.5vw;
+    margin: 3vw;
 }
 
 p {
@@ -36,6 +38,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.viewport_wide_centered_flex_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .left_aligned_flex_container {
@@ -106,8 +114,20 @@ a {
     background: #1C2541;
 }
 
+.space_cadet_border {
+    border: medium solid #1C2541;
+}
+
+.space_cadet_border_thick {
+    border: 2vw solid #1C2541;
+}
+
 .oxford_blue_border {
     border: medium solid #0B132B;
+}
+
+.oxford_blue_border_thick {
+    border: 2vw solid #0B132B;
 }
 
 .hidden {
@@ -138,6 +158,17 @@ a {
 /* =========================================== */
 /* Scaling Classes*/
 /* =========================================== */
+.width_10 {
+    width: 10vw;
+}
+
+.width_15 {
+    width: 15vw;
+}
+.width_30 {
+    width: 30vw;
+}
+
 .width_50 {
     width: 50vw;
 }
@@ -158,11 +189,6 @@ a {
 
     /* HEADER */
 
-    /* .terminal_frame {
-        margin-top: 5vw;
-        margin-bottom: 5vw;
-    } */
-
     .terminal_text_box {
         align-items: start;
         width: 80vw;
@@ -175,10 +201,6 @@ a {
     }
 
     /* ABOUT ME */
-
-    .bio_container {
-        width: 65vw;
-    }
 
     #cartoon_portrait{
         width: 50vw;
