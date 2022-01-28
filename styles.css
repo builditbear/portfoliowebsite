@@ -32,6 +32,10 @@ a {
     display: none;
 }
 
+.white_space {
+    white-space: pre-line;
+}
+
 /* =========================================== */
 /* Structure Classes: Commonly used styles for content placement and size scaling. */
 .centered_flex_container {
@@ -106,6 +110,14 @@ a {
 }
 /* =========================================== */
 /* Decoration Classes: Common styles affecting appearance of content. */
+
+.text_cursor {
+    display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+}
+
 .glaucous_background {
     background: #758ECD;
 }
@@ -132,6 +144,10 @@ a {
 
 .hidden {
     display: none;
+}
+
+.hidden_by_opacity {
+    opacity: 0;
 }
 
 .progressbar {
@@ -181,7 +197,7 @@ a {
 /* ------------------------- */
 /* Mobile */
 @media screen and (min-width: 300px) {
-
+    
     /* NAVBAR */
     #logo_mobile {
         width: 14vw;
