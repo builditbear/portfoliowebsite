@@ -17,11 +17,17 @@ a {
 
 /* navbar */
 .navbar {
+  align-self: flex-start;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: silver;
+  background-color: #758ecd;
+  /* Will attempt to reimplement sticky later - right now, it seems to ignore margins of elements below, 
+  and some elements pass "over" the navbar while scrolling. */
+  /* position: -webkit-sticky;
+  position: sticky;
+  top: 0; */
 }
 
 .navbar > div {
@@ -46,6 +52,56 @@ a {
   width: 100%;
   height: auto;
 }
+/* =========================================== */
+/* Page Header */
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.text-cursor {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}
+.terminal-text-box {
+  display: flex;
+  padding: 1vw;
+  height: 10vh;
+  width: 60vw;
+  background: #1c2541;
+  border: 10px solid #0b132b;
+  align-items: start;
+  border-radius: 15px;
+  color: seashell;
+}
+
+/* Progress Bars */
+.progressbar {
+  height: 5vw;
+  width: 50vw;
+  background: #1c2541;
+  border-radius: 2vw;
+  padding: 0.8vw;
+  box-shadow: inset -0.2vw 0.2vw #0b132b;
+}
+
+/* The progressbar's fill doesn't pass under the navbar when scrolling as it should. Will examine this later. - BC on 03/05/22 */
+.progressbar > span {
+  display: block;
+  height: 100%;
+  border-radius: 3vw 1vw 1vw 3vw;
+  background-color: #1c2541;
+  background-image: linear-gradient(20deg, #7fd7da 37%, #3d5a80 69%);
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
 
 /* =========================================== */
 /* Decoration Classes */
@@ -55,4 +111,8 @@ a {
 
 .hidden {
   display: none;
+}
+
+.hidden-by-opacity {
+  opacity: 0;
 }
