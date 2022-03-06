@@ -72,14 +72,49 @@ a {
   display: flex;
   padding: 1vw;
   height: 10vh;
-  width: 60vw;
+  width: 80vw;
   background: #1c2541;
-  border: 10px solid #0b132b;
+  border: 5px solid #0b132b;
   align-items: start;
   border-radius: 15px;
   color: seashell;
 }
 
+#portrait-container {
+  width: 60%;
+}
+/* =========================================== */
+/* About Me */
+#about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+#about-me > h2 {
+  width: 80%;
+  text-align: center;
+}
+
+#about-me > div {
+  width: 80%;
+}
+/* =========================================== */
+/* Education */
+#education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+#education > * {
+  width: 80%;
+  text-align: center;
+}
 /* Progress Bars */
 .progressbar {
   height: 5vw;
